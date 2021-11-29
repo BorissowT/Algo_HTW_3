@@ -62,7 +62,6 @@ public class Stack<T> implements IStackable<T> {
 		T data;
 		Stack<T>.Node next;
 
-		private Node() {
-		}
+		private Node() { }
 	}
 }

@@ -22,8 +22,8 @@ public class CommandFactory {
 
 		cmds.add(new ExitProgramCmd());
 		cmds.add(new PushCmd(console, stack));
-		cmds.add(new PopCmd());
-		cmds.add(new PeekCmd());
+		cmds.add(new PopCmd(stack));
+		cmds.add(new PeekCmd(stack));
 		cmds.add(new IsEmptyCmd());
 		cmds.add(new ClearCmd());
 		cmds.add(new PrintCmd(stack));
