@@ -7,8 +7,16 @@
  */
 
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'eclipse'
+    id 'idea'
+    id 'pmd'
+    id 'jacoco'
+    // ...
+}
+
+run {
+    standardInput = System.in
 }
 
 repositories {
@@ -17,6 +25,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'junit:junit:4.13.1'
+
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13.2'
 
