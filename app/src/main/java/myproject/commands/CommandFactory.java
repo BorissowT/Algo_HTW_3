@@ -24,10 +24,10 @@ public class CommandFactory {
 		cmds.add(new PushCmd(console, stack));
 		cmds.add(new PopCmd(stack));
 		cmds.add(new PeekCmd(stack));
-		cmds.add(new IsEmptyCmd());
+		cmds.add(new IsEmptyCmd(stack));
 		cmds.add(new ClearCmd(stack));
 		cmds.add(new PrintCmd(stack));
-		cmds.add(new GetSizeCmd());
+		cmds.add(new GetSizeCmd(stack));
 
 		return cmds;
 	}
