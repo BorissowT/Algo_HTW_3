@@ -29,6 +29,7 @@ public class App {
     }
 
     private static void printCommandLineMenu(LinkedList<ICommand> cmds) {
+        System.out.println("Console-Application: Exercise-3 Timofei Borisov s0580092");
         for (int i = 1; i < cmds.size(); i++) {
             System.out.println(i + ". " + cmds.get(i));
         }
