@@ -18,10 +18,10 @@ public class PushCmd implements ICommand {
 
 	@Override
 	public void execute() {
-		String prename = console.readString("Please type firstname of the student");
-		String surname = console.readString("Please lastname name of the student");
-		int matriculationNumber = console.readInteger("Please type matriculation number of the student");
-		int course = console.readInteger("Please type course number of the student");
+		String prename = console.readString("Please type firstname of the student: ");
+		String surname = console.readString("Please type lastname of the student: ");
+		int matriculationNumber = console.readInteger("Please type matriculation number of the student: ");
+		int course = console.readInteger("Please type course number of the student: ");
 		Student student = new Student(prename, surname, matriculationNumber, course);
 		stack.push(student);
 	}

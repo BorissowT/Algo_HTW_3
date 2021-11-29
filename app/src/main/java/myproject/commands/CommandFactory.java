@@ -26,7 +26,7 @@ public class CommandFactory {
 		cmds.add(new PeekCmd());
 		cmds.add(new IsEmptyCmd());
 		cmds.add(new ClearCmd());
-		cmds.add(new PrintCmd());
+		cmds.add(new PrintCmd(stack));
 		cmds.add(new GetSizeCmd());
 
 		return cmds;
